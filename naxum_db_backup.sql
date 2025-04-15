@@ -222,7 +222,7 @@ CREATE TABLE `personal_access_tokens` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `personal_access_tokens_token_unique` (`token`),
   KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -231,7 +231,7 @@ CREATE TABLE `personal_access_tokens` (
 
 LOCK TABLES `personal_access_tokens` WRITE;
 /*!40000 ALTER TABLE `personal_access_tokens` DISABLE KEYS */;
-INSERT INTO `personal_access_tokens` VALUES (5,'App\\Models\\User',1,'auth_token','d1ee0aa0957ef3618dd27966d53d4b57891f53d7526c6c854717bab48743245a','[\"*\"]','2025-04-15 12:02:47',NULL,'2025-04-15 09:17:01','2025-04-15 12:02:47'),(13,'App\\Models\\User',2,'auth_token','c6ec2d7807ca20decfd80651e7b30aec9fa88bcf70b62cca3e76acfd8ae787b5','[\"*\"]','2025-04-15 12:58:54',NULL,'2025-04-15 12:52:13','2025-04-15 12:58:54');
+INSERT INTO `personal_access_tokens` VALUES (5,'App\\Models\\User',1,'auth_token','d1ee0aa0957ef3618dd27966d53d4b57891f53d7526c6c854717bab48743245a','[\"*\"]','2025-04-15 12:02:47',NULL,'2025-04-15 09:17:01','2025-04-15 12:02:47'),(14,'App\\Models\\User',2,'auth_token','35958ba2060adc68be3f0d80c50e7532abb1ea25c992681e4873135ac8f2342f','[\"*\"]','2025-04-15 15:25:10',NULL,'2025-04-15 15:22:34','2025-04-15 15:25:10');
 /*!40000 ALTER TABLE `personal_access_tokens` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -261,7 +261,7 @@ CREATE TABLE `sessions` (
 
 LOCK TABLES `sessions` WRITE;
 /*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
-INSERT INTO `sessions` VALUES ('9AU2HiNzEimZZ5UewSzpuaKIsRTpKavmS9H3guF2',3,'127.0.0.1','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36','YTo1OntzOjY6Il90b2tlbiI7czo0MDoiYkI0QmVjTVZ6dUxCMzREbjFZOTROcWFnTGpkRDdzZkhuVHhVb0pwcyI7czozOiJ1cmwiO2E6MDp7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjM3OiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWNjb3VudHMvY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzt9',1744724751),('HCD5yaRQHnv7yxnctw0xTp9G55I8IwdzZS7gywnq',NULL,'127.0.0.1','PostmanRuntime/7.43.3','YTozOntzOjY6Il90b2tlbiI7czo0MDoiV3JWTU10MkVSVXlpaVNXOGxZSUFwN0lQTGtjZFVCUUxPbExjbUV3byI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=',1744711393),('hUPmJElGbnJWILHbHICX6JfFpsk0u6D6EUdSxXNA',3,'127.0.0.1','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36','YTo0OntzOjY6Il90b2tlbiI7czo0MDoiQlJ3NUljdkZBQWxXTjRxbFpmbDBKVDI2SkN2RXhZZVdzQzRDU3ZGdyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hY2NvdW50cyI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjM7fQ==',1744716298);
+INSERT INTO `sessions` VALUES ('wek1ehD9PSpAJ8kNj7g2lkDwWQRtkwP9KbKSWPjK',3,'127.0.0.1','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36','YTo0OntzOjY6Il90b2tlbiI7czo0MDoibTVLWUtwV0FQMnp5bXRDc2ZWZEZFMmZVc3g2M1ZiN2RKdGZSRzczSiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hY2NvdW50cyI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjM7fQ==',1744733999);
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -286,7 +286,7 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_username_unique` (`username`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -295,7 +295,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'testuser','$2y$12$AytJg7mI9JOv6PjibeIOQetbJJIo.NUEi7VernTp1D8/tE19PQ5JW','Jane','Doe','9876543210','jane.doe@example.com',0,'2025-04-14 23:00:11','2025-04-15 12:02:47'),(2,'kenechi','$2y$12$61d9LEZz/LSoj.SECyyieeSOubmvRZRBziG2IgAzzI/IcWICi/m7y','Kensco','Orjiako','07057178033','kenechi50@gmail.com',0,'2025-04-14 11:24:50','2025-04-15 12:19:48'),(3,'naxumadmin','$2y$12$oMkiH272tKlog8eKUrBj5uQ1r0IzzVPZiVfGjc6s9nH6SvtEPVa36','Admin','Naxum','0000000000','admin@naxum.com',1,'2025-04-14 23:00:11','2025-04-14 23:00:11'),(4,'newuser','$2y$12$QDiElaK9nMqIOuYUA7n/eeFqkoGPSNszHcUK2xFGQE1swu7rdMosq','New','User','5555555555','newuser@example.com',0,'2025-04-15 08:41:33','2025-04-15 08:41:33'),(5,'kene','$2y$12$JUFKlL.lvuzlE3YelOwRj.fwLx0OG6RcdnFlIiJ07OYcraEqYYL.e','Ken','Orjiako','07057178033','ken@gmail.com',0,'2025-04-15 10:09:21','2025-04-15 10:09:21');
+INSERT INTO `users` VALUES (1,'testuser','$2y$12$AytJg7mI9JOv6PjibeIOQetbJJIo.NUEi7VernTp1D8/tE19PQ5JW','Jane','Doe','9876543210','jane.doe@example.com',0,'2025-04-14 23:00:11','2025-04-15 12:02:47'),(2,'kenechi','$2y$12$61d9LEZz/LSoj.SECyyieeSOubmvRZRBziG2IgAzzI/IcWICi/m7y','Kenechiiiiiiiiiii','Orjiakooooooooo','07057178033','kenechi50@gmail.com',0,'2025-04-14 11:24:50','2025-04-15 15:25:03'),(3,'naxumadmin','$2y$12$oMkiH272tKlog8eKUrBj5uQ1r0IzzVPZiVfGjc6s9nH6SvtEPVa36','Admin','Naxum','0000000000','admin@naxum.com',1,'2025-04-14 23:00:11','2025-04-14 23:00:11'),(4,'newuser','$2y$12$QDiElaK9nMqIOuYUA7n/eeFqkoGPSNszHcUK2xFGQE1swu7rdMosq','New','User','5555555555','newuser@example.com',0,'2025-04-15 08:41:33','2025-04-15 08:41:33'),(5,'kene','$2y$12$JUFKlL.lvuzlE3YelOwRj.fwLx0OG6RcdnFlIiJ07OYcraEqYYL.e','Ken','Orjiako','07057178033','ken@gmail.com',0,'2025-04-15 10:09:21','2025-04-15 10:09:21'),(6,'testusername1','$2y$12$rX35lbOXN0ZMppbmCaxLKeghlBuNbwIRI6x6gn5XkN8fMM7ji3jYi','test','testLast','07057178033','test@gmail.com',0,'2025-04-15 15:11:00','2025-04-15 15:11:00'),(7,'admin@naxum.com','$2y$12$81lO1/1t0Cn0vFrEJI/R3eJ0jOgrHgQzliY7Tk6PjWcd5RlgxnGFm','test','test2','08033322211','keneeee@gmail.com',0,'2025-04-15 15:19:26','2025-04-15 15:19:26'),(8,'sammy','$2y$12$QKbj/IP.9jVHQF9/CRC/3Ogbi7T3DPzw7FAmJkB5iSxhD7qsEHKIC','Sammy','Surname','07057178033','sammy@gmail.com',0,'2025-04-15 15:24:22','2025-04-15 15:24:22');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -308,4 +308,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-15 15:06:26
+-- Dump completed on 2025-04-15 17:26:36
